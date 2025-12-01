@@ -5,45 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tokyo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            text-align: center;
+            background-color: #0C2B4E;
+            color: white;
+        }
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .content-box p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .secondary-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 60px auto 30px auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .secondary-box p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .container-with-video {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+            max-width: 1400px;
+            margin: 60px auto 30px auto;
+        }
+        .text-box {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .text-box p {
+            text-align: justify;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .video-box {
+            flex: 0 0 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video-box a {
+            display: block;
+            text-decoration: none;
+        }
+        .video-box img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .video-box img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Navbar</a>
+    <a class="navbar-brand" href="">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="https://www.getyourguide.com/hu-hu/-l193/?cmp=bing&cmp=bing&ad_id=78340423342732&adgroup_id=1253444616483450&bid_match_type=bp&campaign_id=710914125&device=c&feed_item_id=&keyword=toki%C3%B3&loc_interest_ms=140031&loc_physical_ms=139419&match_type=p&msclkid=3598643819fd1774af950d15e0e6f549&network=o&partner_id=CD951&target_id=kwd-78340678166319:loc-88&utm_adgroup=lc%3D193%3Atokyo%7Cfn%3Df3%7Cci%3D937%3Athings%20to%20do&utm_campaign=dc%3D52%3Ajp%7Clc%3D193%3Atokyo%7Cct%3Dcore%7Cln%3D47%3Ahu%7Ctc%3Dall&utm_keyword=toki%C3%B3&utm_medium=paid_search&utm_query=to%20do%20in%20tokyo%20japan&utm_source=bing">Tokyo</a>
         </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index2.html">Action</a></li>
-            <li><a class="dropdown-item" href="index3.html">Another action</a></li>
-            <li><a class="dropdown-item" href="index4.html">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <li class="nav-item">
-          <a class="nav-link" href="img.html">img website</a>
+    <li class="nav-item"></li>
       </span>
     </div>
   </div>
 </nav>
-<header>Tokyo</header>
-    <h1>Welcome to Tokyo</h1>
-    <p>This is the main page of the Tokyo website.</p>
+<header>
+</header>
+    <img src="https://images.ctfassets.net/bth3mlrehms2/2cCxpmVnFuv9cwMkr2NsqO/c007c069037ffd565da823c0521768c5/Japan_Tokio_Skyline_und_Mt._Fuji.jpg?w=3721&h=2093&fl=progressive&q=50&fm=jpg" alt="Tokyo" width="2100" height="1000" />
+   <h1>Tokyo érdekességek</h1>
+<div class="content-box">
+<p>
+Tokió rengeteg különleges látnivalót kínál az idelátogatóknak, ahol a modern csodák és az ősi hagyományok
+ különleges keveréke vár. Kezdjük Shibuyával, ahol a híres gyalogos kereszteződés egyszerre látványos és 
+ kaotikus, de mégis rendezett. A kereszteződés körül bárok, üzletek és hatalmas kijelzők alkotnak egy 
+ neonfényes városi szövetet. Ginza a vásárlás és a prémium butikok szigete, ahol a luxusboltok és elegáns
+  kávézók nyújtanak kifinomult élményt. Asakusa történelmi hangulata a Senso-ji templommal együtt a klasszikus
+   japán atmoszférát hozza el, piacaival és hagyományos üzleteivel. A Meiji-szentély a természet közelségét és
+    a csendet kínálja a város zaja mellett, zöld fáival és tiszta udvarával. A modern építészet rajongói számára
+     a Tokyo Skytree és a Tokyo Tower lenyűgöző kilátást adnak, különleges panorámát nyújtva a városra nappal
+      és éjszaka egyaránt. Akihabara a technológia és az anime kultúra központja; boltok, retro játékgépek és
+       tematikus kávézók sora várja az érdeklődőket. Ha valaki a helyi gasztronómiát szeretné felfedezni, a 
+       Tsukiji külsőpiac és a kisebb utcai ramen-bódék páratlan ízélményt kínálnak; a kaiseki éttermek, 
+       yakitori-utcák és a sushi-mesterek változatossága mindenkit elkápráztat.
 
-    <footer>
-        <span>szöveg</span>
-        <span>oldalszám</span>
-        <span>szöveg</span>
-    </footer>
+A városparkok, például az Ueno park, és a kertépítészeti remekművek, mint a Rikugien és a Koishikawa Korakuen,
+ lehetővé teszik a nyugalom keresését a zajos belváros után. Shinjuku éjszakai élete pezsgő: a neonfények, 
+ éttermek és bárok sokasága, valamint a Kabukichó negyed különleges hangulata éjszakai kalandot kínál. A keleti
+  és nyugati kerületek közötti kontraszt — modern felhőkarcolók mellett rejtett, történelmi sikátorok — 
+  egyedülálló városi textúrát ad Tokiónak. Helyi fesztiválok, matsuri ünnepségek és szezonális programok egész
+   évben színes kulturális kínálatot biztosítanak: a cseresznyevirágzás idején rendezett hanami, vagy a nyári 
+   tűzijátékok és felvonulások mélyebb betekintést adnak a japán kultúrába.
+
+A közlekedés önmagában is élmény: a hatékony metró- és vasúthálózat, beleértve a JR-vonalakat, rendkívül 
+kényelmessé teszi a látnivalók elérését. Kis kávézók és helyi pékségek bájos sora található szinte minden 
+sarkon, így az utcai gasztronómia felfedezése élvezetes időtöltés. A Mori Művészeti Múzeum, a teamLab Borderless
+ (ha elérhető) és más kortárs galériák lenyűgöző kiállításokat rendeznek, míg tradicionális teaházakban a japán 
+ teaceremóniák nyugalma várja azokat, akik elmélyülést keresnek.
+
+Tokió a technológiai újítások és a futurisztikus üzletek központja is: robotika-bemutatók, high-tech üzletek és
+ interaktív kiállítások mutatják be a város innovatív arcát. Különleges kerületek, mint Nakameguro folyóparti 
+ sétányai vagy Yanaka régi hangulata igazi felfedezésre váró gyöngyszemek: antik boltok, kézműves műhelyek és 
+ csendes utcák, ahol a helyi élet ritmusa érezhető. A helyi piacok és kézműves vásárok élő zenei előadásokkal és
+  műhelyekkel színesítik a hétvégéket.
+
+A város zenei és éjszakai élete klubokkal, koncertekkel és szabadtéri rendezvényekkel gazdag; a kulináris 
+kínálat rendkívül változatos — a Michelin-csillagos éttermektől a kis utcai standokig minden ízlésre akad 
+választék. A helyi kézműves szuvenírek és antik tárgyak felfedezése révén betekintést nyerhetünk a mindennapi
+ japán életbe. A folyóparti sétányok és kilátópontok különösen fotogén helyek; a város éjszakai fényei kiváló
+  témát adnak fotósoknak és látogatóknak egyaránt.
+
+Tokió lényege abban rejlik, hogy egyszerre lehet villámgyorsan modern és mégis mélyen gyökerező a hagyományokban.
+ Minden utazó talál itt valami különlegeset: művészetet, ízeket, technológiát vagy csendes sarkokat a 
+ feltöltődéshez. Ez a sokszínűség és a folyamatosan változó városi életmód adja Tokió igazi varázsát, és érdemes 
+ időt szánni a kisebb, helyi boltok és étkezdék felkeresésére, mert ezekben rejlik gyakran a legerősebb élmény.
+</p>
+</div>
+
+<div class="container-with-video">
+    <div class="text-box">
+        <p>Tokió tele van meglepetésekkel és különlegességekkel, ahol a Shibuya gyalogos kereszteződés vibráló
+         forgataga, a Ginza elegáns butikjai és kávéházai, a tradicionális Asakusa Senso-ji templom piacaival,
+         a Meiji-szentély csendes ligetei és a Harajuku utcai divat színpadai mind mutatják a város sokszínűségét,
+          továbbá az Akihabara elektronikai üzletei és anime-kultúra központja, a Tokyo Skytree és Tokyo Tower
+           lenyűgöző kilátópontjai, a Tsukiji külsőpiac friss tengeri finomságai, a kisebb ramen- és yakitori-standok
+
+       autentikus utcai ízei, az Ueno park múzeumai és sakura-sétányai, valamint a Rikugien és Koishikawa
+         Korakuen kertek finom japán kertépítészete mind más-más élményt kínálnak az odalátogatónak, miközben
+          Shinjuku éjszakai neonfényei és kabukichó sokszínűsége, Odaiba futurisztikus szórakozása, Nakameguro
+        folyóparti sétányai, Yanaka történelmi sikátorai és a kisebb, helyi kézműves boltok mind arra 
+
+       hívnak, hogy felfedezzük a város rejtett zugait, és közben a hatékony metró-, JR- és vasúthálózat
+          kényelmes utazást biztosít, a teamLab digitális installációi és a Mori Művészeti Múzeum kortárs
+           kiállításai a kreatív oldalt mutatják meg, a tradicionális teaceremóniák, kabuki és noh előadások
+         pedig a mély kultúrát, továbbá érdemes kipróbálni tematikus kávézókat és állatkávézókat,
+
+          a robotikát és high-tech üzleteket, a capsule hoteleket és luxushoteleket, a helyi szuveníreket
+          kínáló antikváriumokat, a kézműves piacokat, a helyi fesztiválokat — különösen a hanami 
+         időszakát —, a sumo edzések és a stadionlátogatások adta sportélményeket, a rooftop bárok
+          és folyóparti sétányok fotogén kilátásait, a kis utcai árusoknál és convenience boltokban
+
+             kapható különlegességeket, a közösségi gasztronómiai sétákat és Michelin-helyek közötti
+             kontrasztot, a zenei klubok, live house-ok és szabadtéri események hangulatát, a rejtett
+          bárokat és izakaya-kat, valamint a város állandóan változó, mégis hagyományokban 
+         gyökerező arculatát, ami miatt Tokió egyszerre ösztönöz fotózásra, ízek kipróbálására,
+        kulturális elmélyülésre és technológiai csodák megismerésére minden látogatót.</p>
+    </div>
+    <div class="video-box">
+        <a href="https://www.bing.com/videos/riverview/relatedvideo?q=tokyo+to+do&&mid=F66FC0B75598167ADBDAF66FC0B75598167ADBDA&FORM=VCGVRP" target="_blank">
+            <img src="https://th.bing.com/th/id/OVP.tUwDJHnJXgN-NnBJEPK-lQHgFo?w=272&h=153&c=7&rs=1&qlt=70&o=7&pid=1.7&rm=3" alt="Tokyo videó" title="Kattints a videó megtekintéséhez">
+        </a>
+    </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

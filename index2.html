@@ -1,36 +1,110 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokyo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mellék oldal</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            background-color: #0C2B4E;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            width: 100%;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            backdrop-filter: blur(4px);
+
+        }
+
+        .header-img {
+            width: 90%;
+            height: 350px;
+            margin: 20px auto;
+            background: url('header-image.jpg') center/cover no-repeat;
+            border-radius: 12px;
+        }
+
+        .large-box {
+            width: 90%;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        .content-row {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .text-box {
+            flex: 1;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .media-box {
+            width: 40%;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-box iframe,
+        .media-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Mellék oldalak</h1>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <a class="navbar-brand" href="index.html">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
          <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="index2.html">Action</a></li>
+            <li><a class="dropdown-item" href="index3.html">Another action</a></li>
+            <li><a class="dropdown-item" href="index4.html">Something else here</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
         </li>
       </ul>
       <li class="nav-item">
@@ -39,9 +113,23 @@
     </div>
   </div>
 </nav>
-<header>Tokyo</header>
-    <h1>Welcome to Tokyo</h1>
-    <p>This is the main page of the Tokyo website.</p>
+
+    <div class="header-img"></div>
+
+    <div class="large-box">
+        <p>szöveg</p>
+    </div>
+
+    <div class="content-row">
+        <div class="text-box">
+            <p>szöveg</p>
+        </div>
+
+        <div class="media-box">
+            <!-- Linkelhető videó -->
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <footer>
         <span>szöveg</span>

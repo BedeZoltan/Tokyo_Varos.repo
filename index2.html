@@ -1,141 +1,177 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mellék oldal</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         body {
-            margin: 0;
-            background-color: #0C2B4E;
-            font-family: Arial, sans-serif;
-            color: white;
             text-align: center;
+            background-color: #0C2B4E;
+            color: white;
         }
-
-        .navbar {
-            width: 100%;
-            background: rgba(255,255,255,0.1);
-            padding: 10px 0;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            backdrop-filter: blur(4px);
-
-        }
-
-        .header-img {
-            width: 90%;
-            height: 350px;
-            margin: 20px auto;
-            background: url('header-image.jpg') center/cover no-repeat;
-            border-radius: 12px;
-        }
-
-        .large-box {
-            width: 90%;
-            background: rgba(255,255,255,0.1);
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
             padding: 30px;
-            border-radius: 12px;
-            margin: 20px auto;
+            margin: 30px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-
-        .content-row {
-            width: 90%;
-            margin: 20px auto;
+        .content-box p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .secondary-box {
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 60px auto 30px auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .secondary-box p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .container-with-video {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            gap: 15px;
+            align-items: flex-start;
+            max-width: 1400px;
+            margin: 60px auto 30px auto;
         }
-
         .text-box {
             flex: 1;
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        .media-box {
-            width: 40%;
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .media-box iframe,
-        .media-box img {
-            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
             border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
-
-        footer {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            margin-top: 40px;
-            display: flex;
-            justify-content: space-between;
+        .text-box p {
+            text-align: justify;
+            line-height: 1.8;
+            margin: 0;
+        }
+        .video-box {
+            flex: 0 0 400px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .video-box a {
+            display: block;
+            text-decoration: none;
+        }
+        .video-box img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .video-box img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-
-    <h1>Mellék oldalak</h1>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Navbar</a>
+    <a class="navbar-brand" href="">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="https://en.wikipedia.org/wiki/History_of_Tokyo">Tokyo</a>
         </li>
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index2.html">Action</a></li>
-            <li><a class="dropdown-item" href="index3.html">Another action</a></li>
-            <li><a class="dropdown-item" href="index4.html">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <li class="nav-item">
-          <a class="nav-link" href="img.html">img website</a>
+    <li class="nav-item"></li>
       </span>
     </div>
   </div>
 </nav>
+<header>
+</header>
+    <img src="https://images.unsplash.com/photo-1549693578-d683be217e58" alt="Tokyo" width="2100" height="1000" />
+   <h1>Tokyo történelme</h1>
+<div class="content-box">
+<p>
+Tokyo, amely ma Japán pezsgő fővárosáról ismert, egy lenyűgöző történelmi utazáson keresztül
+ fejlődött az egykor kis halászfaluból a világmeghatározó metropolisszá. A város története 
+ több mint 400 évet ölel fel, és tükrözi Japán felgyorsult modernizálódását és a tradíciónak
+  az újjal való ügyes összefonódását.
 
-    <div class="header-img"></div>
+Az eredeti település, amelyet Edo-nak hívtak, a 12. századi egy apró halászfalu volt. A város
+ fejlődése azonban igazán felgyorsult, amikor 1457-ben Ōta Dōkan felépítette az Edo-várát. Ez
+  a vár a régió politikai és katonai központjává vált, és egyre több kereskedőt és katonát 
+  vonzott az területre. A daimyo (feudális urak) felemelkedésével Edo fokozatosan fontosabbá 
+  vált a Kanto-régióban.
 
-    <div class="large-box">
-        <p>szöveg</p>
+A fordulópont az Edo-időszak megkezdésével (1603-1868) érkezett, amikor Tokugawa Ieyasu 
+megalapította a shogunátust és Edót választotta meg szídléshelyéül. Ez a döntés átalakította 
+a kisvárost egy virágzó metropolisszá. A Tokugawa-kormányzat erős irányítása alatt Edo biztonságossá
+ és gazdaságilag virágzóvá vált. A város szisztematikus fejlesztése révén, amely magában foglalta
+  az utcák, templomok és köztető építéseit, Edo a 18. századra Ázsia legnagyobb városai közé került.
+
+A Meiji-restauráció (1868) új korszakot nyitott meg. Az új kormányzat Edót a japán birodalom
+ modern fővárosává nyilvánította, és átnevezték Tokyo-ra, amely "keleti fővárost" jelent. Ez
+  a döntés szimbolizálta Japán irányultságát az új, modern korszak felé. A Meiji-kormányzat 
+  agresszíven modernizálta a várost, bevezette a vasutakat, elektromos tramvajokat, és nyugati-stílusú
+   épületeket húzottak fel. Ez az időszak osaka-ban és más nagyvárosokban is végbement, de Tokyo volt 
+   a legradikálisabb átalakulás központja.
+
+A 20. századi Tokyo-nak számos kihívással kellett szembenéznie. Az 1923-as nagy Kantó-földrengés szinte
+ teljesen megsemmisített a város nagy részét, több mint 100 000 ember vesztette életét. Azonban a város
+  ellenálló ereje csodálatos volt a lakosok újjáépítették Tokyo-t, mely hamarosan még nagyobbá és jobbá
+   vált. Az 1930-as és 1940-es évek alatt a város militarizálódott, ahogy Japán fejlesztette a második 
+   világháborús kampányát.
+
+A második világháború után Tokyo amerikai katonai kormányzás alá került, és a város ismét átalakuláson
+ ment keresztül. Az amerikai befolyás nyugati kultúra és értékeket hozott be, de a város megtartotta a
+  japán tradícióit. Az 1960-as és 1970-es évekre Tokyo a technológiai újítás és gazdasági fejlődés 
+  központjává vált. Az 1964-es tokiói nyári olimpia szimbóluma volt a város modernizálódásának és a 
+  Japán gazdasági csodájának.
+
+A végső évtizedek Tokyo-ját az információs technológiai forradalom és a globális kereskedelmi expanzió
+ alakította. A város folyamatosan fejlődik, új technológiákat vesz fel, míg őrzi történelmi örökségét.
+  Ma Tokyo nem csak Japán szíve, hanem a világ egyik legfontosabb pénzügyi, kulturális és technológiai
+   központja.
+</p>
+</div>
+
+<div class="container-with-video">
+    <div class="text-box">
+        <p>Tokyo fejlődésének kezdete a 12. századdal kezdődik, amikor egy apró halászfalu volt.
+     A város valódi fejlődése azonban 1457-ben gyorsult fel, amikor Ōta Dōkan felépítette
+      az Edo-várát. Ez a vár a régió politikai és katonai központjává vált, és fokozatosan
+       vonzott kereskedőket és katonákat. Az Edo-időszak (1603-1868) alatt Tokugawa Ieyasu
+        shogunátusa alatt Edo egy virágzó metropolisszá alakult. A város szisztematikus 
+        fejlesztésével az utcák, templomok és nyilvános épületek építésével Edo a 18. századra
+         Ázsia egyik legnagyobb városává nőtt. A Meiji-restauráció (1868) után Edo átnevezték
+          Tokyo-ra, ami "keleti fővárost" jelent. A város agresszíven modernizálódott, vasutakat
+           és elektromos tramvajokat vezettek be. Az 1923-as nagy Kantó-földrengés megsemmisítette
+            a város nagy részét, de a lakosok csodálatos ellenálló erővel újjáépítették azt. A második
+             világháború után az amerikai befolyás nyugati kultúrát hozott, miközben Tokyo megtartotta
+              japán tradícióit. Az 1964-es nyári olimpia szimbóluma volt a város modernizálódásának.
+               Ma Tokyo a világ egyik legfontosabb pénzügyi, kulturális és technológiai központja.</p>
     </div>
-
-    <div class="content-row">
-        <div class="text-box">
-            <p>szöveg</p>
-        </div>
-
-        <div class="media-box">
-            <!-- Linkelhető videó -->
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-        </div>
+    <div class="video-box">
+        <a href="https://www.youtube.com/watch?v=I_qaccjrirc" target="_blank">
+            <img src="https://img.youtube.com/vi/I_qaccjrirc/maxresdefault.jpg" alt="Tokyo videó" title="Kattints a videó megtekintéséhez">
+        </a>
     </div>
+</div>
 
-    <footer>
-        <span>szöveg</span>
-        <span>oldalszám</span>
-        <span>szöveg</span>
-    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

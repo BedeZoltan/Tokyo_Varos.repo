@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Képes oldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #fff;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .nav-left, .nav-center, .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hamburger {
+            width: 25px;
+            height: 3px;
+            background: black;
+            position: relative;
+        }
+        .hamburger::before, .hamburger::after {
+            content: "";
+            width: 25px;
+            height: 3px;
+            background: black;
+            position: absolute;
+            left: 0;
+        }
+        .hamburger::before { top: -7px; }
+        .hamburger::after { top: 7px; }
+
+        .main-image img {
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            animation: fade 3s ease-in-out;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 100%;
+            height: 800px;
+            padding: 20px;
+        }
+
+        .gallery img,
+        .bottom-row img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            border-radius: 6px;
+            animation: fade 2s;
+        }
+
+        .bottom-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0 20px 20px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar w/ text</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index2.html">Action</a></li>
+            <li><a class="dropdown-item" href="index3.html">Another action</a></li>
+            <li><a class="dropdown-item" href="index4.html">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <li class="nav-item">
+          <a class="nav-link" href="img.html">img website</a>
+      </span>
+    </div>
+  </div>
+</nav>
+<header>Tokyo</header>
+    <div class="main-image">
+        <img src="https://images.unsplash.com/photo-1549693578-d683be217e58" alt="Tokyo" />
+    </div>
+
+    <div class="gallery">
+  <img src="tower-6044232_1920.jpg" alt="Tokyo 1" />
+  <img src="night-7024595_1280.jpg" alt="Tokyo 2" />
+  <img src="" alt="Tokyo 3" />
+</div>
+    </div>
+
+    <div class="bottom-row">
+        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26" alt="Tokyo" />
+        <img src="japan-4524260.jpg" alt="Tokyo" />
+    </div>
+
+    <footer>
+        <span>szöveg</span>
+        <span>oldalszám</span>
+        <span>szöveg</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
